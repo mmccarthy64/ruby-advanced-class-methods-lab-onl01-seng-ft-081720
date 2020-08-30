@@ -11,6 +11,7 @@ class Song
   end
   
   def create(name)
+    @name = name
     @@all << self
   end
   
