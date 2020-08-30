@@ -22,6 +22,10 @@ class Song
     song
   end
   
+  def self.create_by_name(title)
+    
+  end
+  
   def self.destroy_all
     @@all.clear
   end
