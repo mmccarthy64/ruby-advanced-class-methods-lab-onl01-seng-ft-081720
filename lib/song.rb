@@ -17,7 +17,8 @@ class Song
   end
   
   def self.new_by_name(name)
-    
+    song = name.to_s.split(" ")
+    song
   end
   
   def self.destroy_all
