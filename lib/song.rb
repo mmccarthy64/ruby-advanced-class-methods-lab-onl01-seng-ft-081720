@@ -13,6 +13,7 @@ class Song
   def self.create(name)
     @name = name
     save
+    @name
   end
   
   def self.destroy_all
