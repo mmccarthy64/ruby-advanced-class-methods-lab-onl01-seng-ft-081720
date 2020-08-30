@@ -28,6 +28,11 @@ class Song
     song
   end
   
+  def self.find_by_name(title)
+    song = @@all.find(title)
+    song
+  end
+  
   def self.destroy_all
     @@all.clear
   end
