@@ -29,8 +29,8 @@ class Song
   end
   
   def self.find_by_name(title)
-    song = @@all.find(title)
-    song
+    search = self.all.detect {|song| song.name === title}
+    search
   end
   
   def self.destroy_all
