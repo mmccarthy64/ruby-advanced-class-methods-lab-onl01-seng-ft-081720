@@ -12,7 +12,7 @@ class Song
   
   def create(name)
     @name = name
-    @@all << self
+    save
   end
   
   def self.destroy_all
